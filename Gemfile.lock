@@ -38,14 +38,18 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
+    faraday (2.14.0)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-net_http (3.4.2)
+      net-http (~> 0.5)
+    faraday-retry (2.4.0)
+      faraday (~> 2.0)
     ffi (1.17.3-arm64-darwin)
-    ffi (1.17.3-x86_64-linux-gnu)
     forwardable (1.4.0)
     forwardable-extended (2.6.0)
     google-protobuf (4.33.2-arm64-darwin)
-      bigdecimal
-      rake (>= 13)
-    google-protobuf (4.33.2-x86_64-linux-gnu)
       bigdecimal
       rake (>= 13)
     http_parser.rb (0.8.1)
@@ -99,6 +103,8 @@ GEM
     mercenary (0.4.0)
     namae (1.2.0)
       racc (~> 1.7)
+    net-http (0.9.1)
+      uri (>= 0.11.1)
     observer (0.1.2)
     open-uri (0.5.0)
       stringio
@@ -115,9 +121,8 @@ GEM
     rexml (3.4.4)
     rouge (4.6.1)
     safe_yaml (1.0.5)
-    sass-embedded (1.97.1)
+    sass-embedded (1.97.1-arm64-darwin)
       google-protobuf (~> 4.31)
-      rake (>= 13)
     set (1.1.2)
     singleton (0.3.0)
     stringio (3.2.0)
@@ -131,18 +136,15 @@ GEM
 
 PLATFORMS
   arm64-darwin-24
-  x86_64-linux
 
 DEPENDENCIES
+  faraday-retry
   jekyll (~> 4.3)
   jekyll-feed
   jekyll-include-cache
   jekyll-scholar (~> 7.0)
   jekyll-seo-tag
   webrick
-
-RUBY VERSION
-   ruby 3.1.7p261
 
 BUNDLED WITH
    2.3.27

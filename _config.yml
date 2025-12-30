@@ -48,4 +48,4 @@ scholar:
   source: ./_bibliography
   bibliography: references.bib
   bibliography_template: bib
-
+  bibliography_layout: _layouts/bib.html
