@@ -28,8 +28,11 @@ plugins:
   - jekyll-scholar
 
 exclude:
+  - vendor
+  - vendor/**
   - Gemfile
   - Gemfile.lock
+  - node_modules
   - README.md
   - Rakefile
 
