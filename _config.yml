@@ -25,7 +25,10 @@ colors:
 github: { metadata: false }
 
 plugins:
-  - jekyll-scholar
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-schola
 
 exclude:
   - vendor
@@ -38,10 +41,11 @@ exclude:
 
 # Bibliography settings
 scholar:
-  last_name: Alcala-Briseno
+  last_name: Alcalá Briseño
   locale: en
   sort_by: year,month
-  order: descending,descending
+  order: descending
   source: ./_bibliography
   bibliography: references.bib
   bibliography_template: bib
+

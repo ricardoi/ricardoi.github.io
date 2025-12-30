@@ -1,9 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.7)
-      public_suffix (>= 2.0.2, < 7.0)
-    base64 (0.3.0)
+    addressable (2.8.8)
+      public_suffix (>= 2.0.2, < 8.0)
     bibtex-ruby (4.4.7)
       latex-decode (~> 0.0)
     citeproc (1.1.0)
@@ -17,29 +16,30 @@ GEM
       citeproc (~> 1.0, >= 1.0.9)
       csl (~> 1.6)
     colorator (1.1.0)
-    concurrent-ruby (1.3.5)
+    concurrent-ruby (1.3.6)
     csl (1.6.0)
       namae (~> 1.0)
       rexml
     csl-styles (1.0.1.11)
       csl (~> 1.0)
-    date (3.5.0)
+    date (3.5.1)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    faraday (2.8.1)
-      base64
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
-    faraday-net_http (3.0.2)
+    faraday (2.14.0)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-net_http (3.4.2)
+      net-http (~> 0.5)
     faraday-retry (2.4.0)
       faraday (~> 2.0)
-    ffi (1.17.2)
-    forwardable (1.3.3)
+    ffi (1.17.3-arm64-darwin)
+    forwardable (1.4.0)
     forwardable-extended (2.6.0)
-    http_parser.rb (0.8.0)
-    i18n (1.14.7)
+    http_parser.rb (0.8.1)
+    i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     jekyll (3.9.5)
       addressable (~> 2.4)
@@ -69,9 +69,9 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (2.16.0)
-    kramdown (2.4.0)
-      rexml
+    json (2.18.0)
+    kramdown (2.5.1)
+      rexml (>= 3.3.9)
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     latex-decode (0.4.0)
@@ -79,9 +79,12 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
     mercenary (0.3.6)
     namae (1.2.0)
       racc (~> 1.7)
+    net-http (0.9.1)
+      uri (>= 0.11.1)
     observer (0.1.2)
     open-uri (0.5.0)
       stringio
@@ -89,32 +92,31 @@ GEM
       uri
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (5.1.1)
+    public_suffix (6.0.2)
     racc (1.8.1)
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
     rexml (3.4.4)
     rouge (3.30.0)
-    ruby2_keywords (0.0.5)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    stringio (3.1.8)
-    time (0.4.1)
+    stringio (3.2.0)
+    time (0.4.2)
       date
     uri (1.1.1)
-    webrick (1.9.1)
+    webrick (1.9.2)
 
 PLATFORMS
-  ruby
+  arm64-darwin-24
 
 DEPENDENCIES
   faraday-retry
-  jekyll (~> 3.9.3)
+  jekyll (~> 3.9.5)
   jekyll-feed
   jekyll-include-cache
   jekyll-scholar (~> 5.16)
@@ -124,4 +126,4 @@ DEPENDENCIES
   webrick
 
 BUNDLED WITH
-   2.1.4
+   2.3.27
