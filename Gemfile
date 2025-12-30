@@ -1,7 +1,5 @@
 source "https://rubygems.org"
 
-ruby "2.7.8"
-
 gem "jekyll", "~> 3.9.3"
 gem "jekyll-scholar", "~> 5.16"
 gem "webrick"
